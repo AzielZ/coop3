@@ -5,7 +5,8 @@
 		if($_SESSION["valida"] != 1){
 			header("Location:http://intranet.unimedpinda.com.br/coop/redireciona_coop.php");
 			session_destroy();
-		}
+		exit();
+	}
 
 ?>
 <!-- SweetAlert 2 -->
@@ -32,8 +33,8 @@
 						<div>
 							<div class="row">
 								<div class="col-xs-6 col-md-4">
-									<br>Cod. Funcionario(CRM):<br>
-									<input type="text" id="codFunc" placeholder="*********" class="form-control" maxlength="6">
+								<br>CRM <br> <!-- Cod. Funcionario -->
+									<input type="text" id="codFunc" placeholder="* * * * * *" class="form-control" maxlength="6">
 								</div>
 
 								<div class="col-xs-6 col-md-4">
@@ -46,7 +47,7 @@
 							
 							<br><br><br>
 							<button class="btn btn-success btn-lg" name="enviar" onclick="atualizaSenha();"> Salvar</button>
-							<a href='home_secret.php'><button type='button' class='btn btn-default btn-lg'> Voltar</button></a>
+							<a href='home_secret.php'><button type='button' class='btn btn-default btn-lg'> Cancelar</button></a>
 						</div>
 						<br>
 					</div>

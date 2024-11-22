@@ -1,9 +1,13 @@
 <nav class="navbar navbar-inverse navbar-fixed-bottom">
   <div class="container-fluid" style="display: flex; justify-content: center;">
 	<div class="navbar-header centro">
-		<h5 style="color:white" align="center">Unimed Pindamonhangaba Coop. de Trab. Médico</h5>
-		<h5 style="color:white" align="center">&copy; Desenvolvido pelo setor de TI - 2024</h5>
-	</div>
+    <h5 style="color:white" align="center">Unimed Pindamonhangaba Coop. de Trab. MÃ©dico</h5>
+    <h5 style="color:white" align="center">&copy; Desenvolvido pelo setor de TI - 2024</h5>
+</div>
+
+<div class="footer-version">
+    <span style="color:white">Version 2.0.0</span>
+</div>
 	<!-- <div id="navbar" class="navbar-collapse collapse direita">
 		<a href="home.php"><img src="img/logorodape.png"></a>
 	</div> -->

@@ -25,7 +25,7 @@
 			<div class="container theme-showcase" role="main">
 				<div class="panel panel-success">
 					<div class="panel-heading">
-					<h3 class="panel-title">CADASTRO DE USUARIO PARA AREA DO COOPERADO</h3>
+					<h3 class="panel-title">CADASTRO DE USUÁRIO / COOPERADO</h3>
 					</div>
 					<div class="panel-body">
 
@@ -41,8 +41,8 @@
 
 							<div class="row">
 								<div class="col-xs-6 col-md-4">
-									<br>Cod. Funcionario(CRM):<br>
-									<input type="text" id="codFunc" placeholder="*********" class="form-control" maxlength="20">
+								<br>CRM <br> <!-- Cod. Funcionario -->
+									<input type="text" id="codFunc" placeholder="* * * * * *" class="form-control" maxlength="20">
 								</div>
 
 								<div class="col-xs-6 col-md-4">
@@ -54,8 +54,8 @@
 							
 														<div class="row">
 								<div class="col-xs-6 col-md-4">
-									<br>Senha:<br>
-									<input type="password" id="senha" placeholder="*********" class="form-control" maxlength="20">
+									<br>Senha <br>
+									<input type="password" id="senha" placeholder="* * * * * *" class="form-control" maxlength="20">
 								</div>
 
 								<div class="col-xs-6 col-md-4">
@@ -67,8 +67,8 @@
 							
 														<div class="row">
 								<div class="col-xs-6 col-md-4">
-									<br>Confirmar Senha::<br>
-									<input type="password" id="confirmSenha" placeholder="*********" class="form-control" maxlength="20">
+									<br>Confirmar Senha <br>
+									<input type="password" id="confirmSenha" placeholder="* * * * * *" class="form-control" maxlength="6">
 								</div>
 
 								<div class="col-xs-6 col-md-4">
@@ -80,7 +80,7 @@
 
 							<br><br><br>
 							<button class="btn btn-success btn-lg" name="enviar" onclick="cadastraUsuario()"> Salvar</button>
-							<a href='home_secret.php'><button type='button' class='btn btn-default btn-lg'> Voltar</button></a>
+							<a href='home_secret.php'><button type='button' class='btn btn-default btn-lg'> Cancelar</button></a>
 						</div>
 						<br>
 					</div>

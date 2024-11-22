@@ -502,9 +502,17 @@ function alterarsenha($login, $senha, $novasenha, $tipo)
 			                   F.DTALTER_SENHA = TO_CHAR(TRUNC(SYSDATE),'DD/MM/YYYY'), 
 					               F.CDSENHA_ANT = F.CDSENHA
 			             WHERE F.CDFUNCIONARIO = '$login'
-										 AND UPPER(CRIPT(F.CDSENHA,'XMSDES-CRIPT')) = UPPER('$senha')";};
-
-			 $_SESSION["senhaAnterior"] = 'Te peguei';
+										 AND UPPER(CRIPT(F.CDSENHA,'XMSDES-CRIPT')) = UPPER('$senha')";
+										 									 
+			 $resultado = oci_parse($ora_conecta, $consulta);
+            if (oci_execute($resultado)) {
+                $_SESSION["senhaAnterior"] = 'Senha atualizada com sucesso!';
+            } else {
+                $_SESSION["senhaAnterior"] = 'Erro ao atualizar a senha!';
+            }
+        }
+    }
+};
 						   
 		//RECEBER AS INFORMACOES DOS COOPERADOS      
 		if($tipo=="2"){

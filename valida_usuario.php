@@ -17,29 +17,29 @@ function valida_usuario($tela) {
 	if ($cont<1 || $cdfunc == NULL || $groupfunc == NULL)
 	{
 		if ($cdfunc == NULL ){
-			//Não há usuário logado, manda pra página de login do cooperado
+			//Nï¿½o hï¿½ usuï¿½rio logado, manda pra pï¿½gina de login do cooperado
 			header("Location:redireciona_coop.php");
 			session_destroy();
 		} else if ($groupfunc == NULL){
-			//Não há usuário logado, manda pra página de login do cooperado
+			//Nï¿½o hï¿½ usuï¿½rio logado, manda pra pï¿½gina de login do cooperado
 			header("Location:redireciona_coop.php");
 			session_destroy();
 		} else if ($groupfunc == 'SAMC'){
-			//Não há usuário logado, manda pra página de login do cooperado
+			//Nï¿½o hï¿½ usuï¿½rio logado, manda pra pï¿½gina de login do cooperado
 			header("Location:redireciona_coop.php");
 			session_destroy();
 		} else if ($groupfunc == 'ADMIN'){
-			//Não há usuário logado, manda pra página de login do administrativo
+			//Nï¿½o hï¿½ usuï¿½rio logado, manda pra pï¿½gina de login do administrativo
 			header("Location:redireciona_admin.php");
 			session_destroy();
 		}else if($groupfunc == 'SECRET'){
-			//Não há usuário logado, manda pra página de login do administrativo	
+			//Nï¿½o hï¿½ usuï¿½rio logado, manda pra pï¿½gina de login do administrativo	
 			header("Location:home_admin.php");
 			/*session_destroy();*/
 		} else {
-			//Não há usuário logado, manda pra página de login do administrativo
+			//Nï¿½o hï¿½ usuï¿½rio logado, manda pra pï¿½gina de login do administrativo
 			header("Location:XXX.php");
 		}
 	}
 }
-?>
+?> 

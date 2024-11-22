@@ -181,3 +181,10 @@ span.navbar-brand {
   min-height: 450px;
 }
 
+.footer-version {
+    position: fixed;
+    bottom: 10px; /* Ajuste a distância do fundo da tela */
+    right: 10px;  /* Ajuste a distância da lateral direita */
+    font-size: 14px;  /* Tamanho da fonte */
+    color: white;
+}
